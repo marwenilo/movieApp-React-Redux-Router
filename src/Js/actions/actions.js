@@ -28,7 +28,3 @@ import {
     id
   });
 
-  export const getMovieDescription = id => ({
-    type:  GET_MOVIE_DESCRIPTION,
-    id
-  });

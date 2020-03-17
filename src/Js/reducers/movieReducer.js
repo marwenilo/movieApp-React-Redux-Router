@@ -38,15 +38,6 @@ const movieReducer = (state = InitialState, { type, payload, id }) => {
                         //this payload is and obj with the id of the movie that we want to change and the rest of the new info from modal 
                     )
                   };
-
-                  case GET_MOVIE_DESCRIPTION:
-                    return {
-                      ...state,
-                      movies: state.movies.filter(el => el.id === id? el : null)
-
-                      //this payload is full of the id from the click of the movie decsription btn 
-                    };
-
           default:
 
               return state
