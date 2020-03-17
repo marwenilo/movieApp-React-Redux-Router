@@ -6,7 +6,7 @@ import Description from "../component/Description"
 const AppRouter = () => (
   <Router>
     <Switch>
-      <Route path="/s" exact component={CardContainer} />
+      <Route path="/" exact component={CardContainer} />
  <Route path="/description/:id" exact component={Description} />
     </Switch>
   </Router>

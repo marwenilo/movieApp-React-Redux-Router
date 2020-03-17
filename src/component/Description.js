@@ -8,20 +8,23 @@ class Description extends Component {
     this.props.getMovieDescription(this.props.match.params.id);
   }
 
+
   render() {
     if (!this.props.movies) {
       return (<p>there's no movie</p>) ;
     }
-    const movies = this.props.movies
+    const [movies] = this.props.movies.filter(
+        el => el.id === this.props.match.params.id
+      );
 console.log(movies)
     return (
       <div>
-      { movies.map((el,key)=>(
-         <div key={key}>
+  
+         <div>
          <h1>DESCRIPTION PAGE</h1>
-         <h1>{el.discription}</h1>
+         <h1>{movies.discription}</h1>
          </div> 
-      )) }
+      )
  
       </div>
     );
