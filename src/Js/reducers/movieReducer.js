@@ -3,7 +3,6 @@ import {
     ADD_MOVIE,
     DELETE_MOVIE,
     EDIT_MOVIE,
-    GET_MOVIE_DESCRIPTION
   } from '../Constants/actions-types';
   import {movies} from "../../component/data"
 

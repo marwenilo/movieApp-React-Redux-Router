@@ -2,7 +2,6 @@ import {
     DELETE_MOVIE,
     EDIT_MOVIE,
     ADD_MOVIE,
-    GET_MOVIE_DESCRIPTION
   } from '../Constants/actions-types';
   import { v4 as uuidv4 } from 'uuid';
 
